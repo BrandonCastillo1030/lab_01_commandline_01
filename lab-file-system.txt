@@ -31,7 +31,7 @@ If it doesn't start at #1 again, or ask for help before moving on!
 
 Copy and paste the output of pwd below.
 ----------
-
+/Users/Guest/mtec1002
 
 
 ==========
@@ -42,6 +42,8 @@ $ ls
 
 Copy and paste the output below.
 ----------
+mtec1002 Guest$ ls
+animals
 
 
 
@@ -53,6 +55,10 @@ $ ls
 
 Copy and paste the output below.
 ----------
+$ mkdir food
+-bash: $: command not found
+A431-MacMini14:mtec1002 Guest$ ls
+animals
 
 
 
@@ -64,6 +70,8 @@ $ ls
 
 Copy and paste the output below.
 ----------
+ls
+animals	foo
 
 
 
@@ -76,6 +84,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
+/Users/Guest/mtec1002/foo/bar/baz/qux
 
 
 ==========
@@ -87,6 +96,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
+/Users/Guest/mtec1002/foo/bar
 
 
 ==========
@@ -97,7 +107,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/Users/Guest/mtec1002/foo/bar/baz/qux
 
  
 ==========
@@ -108,7 +118,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/Users/Guest/mtec1002
 
 
 ==========
@@ -120,7 +130,8 @@ $ ls -l
 
 Copy and paste the first two lines from the output into the space below.
 ----------
-
+total 0
+drwxr-xr-x  3 Guest  _guest  102 Sep  4 13:10 foo
 
 
 ==========
@@ -131,7 +142,7 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+/Users/Guest
 
 
 ==========
@@ -142,7 +153,7 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+/Volumes
 
 
 ==========
@@ -153,18 +164,18 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+/Volumes
 
 
 ==========
 15. Type:
 
-$ cd ~/mtec1002
+$ /Users/Guest/mtec1002
 $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+/Users/Guest/mtec1002
 
 
 ==========
@@ -174,13 +185,13 @@ $ hostname
 
 Copy and paste the output into the space below.
 ----------
-
+local
 
 
 ==========
 17a. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
-
+  pwd
 
 
 ==========
@@ -203,7 +214,7 @@ lemon
 
 Use only one command to make all of these new directories.  Write what command you used below:
 ----------
-
+mkdir -p lemon/ strawberry/orange/ pineapple
 
 
 ==========
@@ -211,7 +222,7 @@ Use only one command to make all of these new directories.  Write what command y
 
 Write the command you used to create the directory below:
 ----------
-
+-p aardvark
 
 
 ==========
@@ -219,6 +230,10 @@ Write the command you used to create the directory below:
 
 What is the modified date of the aardvark directory?
 ----------
+drwxr-xr-x  3 Guest  _guest  102 Sep  4 13:10 foo
+drwxr-xr-x  2 Guest  _guest   68 Sep  4 13:23 lemon
+drwxr-xr-x  2 Guest  _guest   68 Sep  4 13:23 pineapple
+drwxr-xr-x  3 Guest  _guest  102 Sep  4 13:23 strawberry
 
 
 
@@ -231,7 +246,7 @@ What is the modified date of the aardvark directory?
 
 What command did you use?
 ----------
-
+mkdir -p foo/bar/baz
 
 
 ==========
@@ -239,7 +254,9 @@ What command did you use?
 
 What command did you use?
 ----------
-
+mkdir -p foo/bar/baz
+mkdir: foo/bar/baz: Permission denied
+ i feel i did something wrong
 
 
 ==========
@@ -247,44 +264,46 @@ What command did you use?
 
 What command did you use?
 ----------
-
+/../../
 
 ==========
 24. What command is used to delete empty directories?
 ----------
-
+-r 
 
 
 ==========
 25. What command is used to print out your current working directory?
 ----------
 
-
+-ls
 
 ==========
 26. What flag do I pass to ls to print out all files?
 ----------
-
+-l
 
 
 ==========
 27. What's the shortcut for home directory?
 ----------
-
+pwd /
 
 
 ==========
 28. What's a pathname?
 ----------
 
+the location of a file through a directory
 
 
 ==========
 29. What's a directory?
 ----------
-
+how you navigate through files
 
 
 ==========
 30. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
+cd downloads
